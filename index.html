@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>URBAN DIGITAL SOLUTIONS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/UDS-logo.png" alt="Logo1" /></a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            MENU
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#onama">ABOUT US</a></li>
+              <li><a class="dropdown-item" href="#contact">CONTACT</a></li>
+          </ul>
+      </div>
+        
+      </nav>
+      <div class="text-box">
+        <h1 id="pocetak">HEADLINE</h1>
+        <p>
+          Short description about the company
+        </p>
+        <a href="Galerija/blackandwhite.html" class="hero-btn">GALLERY</a>
+      </div>
+    </section>
+    
+    <!---O NAMA-->
+    <section class="onama">
+      <h1 id="onama">ABOUT US</h1>
+      <p>Full description about company work you do and enything that you find important<br/>each topic has a nice shadow efect aroud edges</p>
+      <div class="row">
+        <div class="onama-col">
+          <h3>Topc 1</h3>
+          <p>
+            few rows about first topic<br />this is not a link
+          </p>
+        </div>
+        <div class="onama-col">
+          <h3>Topic 2</h3>
+          <p>
+            few rows about second topic<br />this is not a link
+          </p>
+        </div>
+        <div class="onama-col">
+          <h3>Topic 3</h3>
+          <p>few rows about third topic<br />this is not a link</p>
+        </div>
+        <div class="onama-col">
+          <h3>Topic 4</h3>
+          <p>few rows about fourth topic<br />this is not a link</p>
+        </div>
+      </div>
+    </section>
+    <!----- josnesto  ---->
+    <section class="josnesto">
+      
+      <div class="row">
+        <div class="josnesto-col">
+          <img src="images/photo-1545486332-9e0999c535b2.jpg" alt="vuk" />
+          <div class="layer">
+            <h3>photo 1<br />and description</h3>
+          </div>
+        </div>
+        <div class="josnesto-col">
+          <img src="images/photo-1545486332-9e0999c535b2.jpg" alt="vanja" />
+          <div class="layer">
+            <h3>photo 2<br />and description</h3>
+          </div>
+        </div>
+        <div class="josnesto-col">
+          <img src="images/photo-1545486332-9e0999c535b2.jpg" alt="relja" />
+          <div class="layer">
+            <h3>photo 3<br />and description</h3>
+          </div>    
+        </div>
+        <div class="josnesto-col">
+          <img src="images/photo-1545486332-9e0999c535b2.jpg" alt="porodica" />
+          <div class="layer">
+            <h3>photo 4<br />and description</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   
+
+    <!-----contact----->
+    <section class="contact">
+      <h1 id="contact">Contact</h1>
+      <a href="https://us5.list-manage.com/contact-form?u=38a2bdee755983fd5171d76eb&form_id=67656d8f7a0404523cd02ecc537e652c" class="hero-btn">Send e-mail</a>
+
+    </section>
+    <!-----footer-->
+     <p id="footer">by Predrag Gajic for UDS</p>
+
+
+    <!------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      
+      
+  </body>
+</html>
